@@ -53,6 +53,8 @@ function App() {
           console.log(error.text);
         }
       );
+
+    alert("message sent!");
   };
 
   function isEmail(email) {
