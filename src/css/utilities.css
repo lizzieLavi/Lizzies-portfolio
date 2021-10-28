@@ -1,0 +1,14 @@
+
+.container {
+    max-width: var(--website-width);
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .paragraph
+  {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      text-align:center;
+  }

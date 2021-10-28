@@ -1,0 +1,686 @@
+@import 'config.css';
+
+
+
+.header
+{
+   background: url("https://res.cloudinary.com/dsrgpqnyv/image/upload/v1633800496/Threat_Hunting_Blog_Image_V1-1024x576_esc8xy.jpg") no-repeat center right/cover;
+   height: 100vh;
+   color:var(--light-color);
+   opacity:0.9;
+
+}
+
+.container {
+  max-width: var(--website-width);
+  height: 100vh;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.black_background::before
+{
+    content: "";
+    position: absolute;
+    background-color: black;
+    opacity:0.5;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+}
+
+.paragraph
+{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align:center;
+}
+
+
+.cv_nav_header {
+    width: 100%;
+    z-index: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:0;
+    width: 100%;
+
+}
+
+
+
+.header_menu
+{
+    display: flex;
+    align-items: flex-start;
+    padding-top:4rem;
+}
+
+
+.menu_options
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu_item
+{
+  padding: 1rem 1.5rem;
+}
+
+.menu_item .item
+{
+  font-size: 1.8rem;
+  border-bottom: 2px transparent solid;
+  letter-spacing: .1rem;
+  transition: border-color 0.5s;
+  color: var(--light-color);
+}
+
+.menu_item .item:hover
+{
+  border-bottom: 2px solid var(--light-color);
+  cursor: pointer;
+}
+
+.menu_item .current
+{
+  border-bottom: 2px solid var(--light-main-color);
+}
+
+
+.top_cv_info
+{
+    width: 100%;
+    height: 100%;
+    min-height: 78.6rem;
+    position: relative;
+}
+
+.my_info_content
+{
+    padding:2rem;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.my_info_content h1
+{
+  font-size:5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+
+
+
+.resume_download
+{
+  display: inline-block;
+	padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  font-size: 2rem;
+  cursor: pointer;
+	border-radius: 0.7rem;
+	background-color:var(--light-color);
+	color: var(--dark-color); 
+  border:none;
+}
+
+.resume_download:hover
+{
+  
+	background-color: var(--light-main-color);
+	color: var(--dark-color);
+  
+}
+
+.links {
+    list-style: none;
+    margin: 0;
+    padding-bottom: 9rem;
+    position: absolute;
+    bottom: 0;
+    right:2rem;
+}
+
+.links::after
+{
+    display: block;
+    content: "";
+    height: 8rem;
+    width: 0.1rem;
+    background-color: var(--light-main-color);
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+}
+
+.section_title
+{
+    color:var(--light-color);
+    display: block;
+    font-weight: 100;
+    font-size: 3.5rem;
+    padding-bottom:0.5rem;
+    text-align: center;
+}
+
+.title_bottom_line
+{
+  height:2px;
+  width: 3rem;
+  background: var(--light-main-color);
+  display:block;
+  margin: 0 auto 1rem auto;
+}
+
+/* about me*/
+
+#about
+{
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--dark-main-color);
+}
+
+.about_me
+{
+    display: flex;
+    flex-direction: row;
+    padding: 0 15rem;
+}
+
+
+
+.about_me_img
+{
+    margin-right: 5rem;
+}
+
+.my_img
+{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 1rem;
+    border: 0.1rem solid var(--light-main-color);
+    border-right: 0.3rem solid var(--light-main-color);
+}
+
+.about_me_content
+{
+    border-radius: 1rem;
+    border: 0.1rem solid var(--light-main-color);
+    border-left: 0.3rem solid var(--light-main-color);
+    background-color: var(--dark-color);
+    opacity: 0.7;
+
+}
+
+.my_words
+{
+    margin:1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    color:var(--light-color);
+}
+
+/*charecters*/
+
+.characters
+{
+  padding:3rem 15rem;
+}
+
+.process
+{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.quality 
+{
+  padding:1rem;
+}
+
+.icon  .MuiSvgIcon-root
+{
+  border-radius: 50%;
+  padding: 2rem;
+  background:  var(--dark-color);
+  color: var(--light-color) ;
+  width:11rem;
+  height: 11rem;
+  transition: all 1s;
+
+}
+
+.icon  .MuiSvgIcon-root:hover
+{
+
+  background:  var(--light-color);
+  color: var(--light-main-color);
+  width:12rem;
+  height: 12rem;;
+}
+
+.quality_title
+{
+  font-size: 2rem;
+  letter-spacing: 0.01rem;
+  text-transform: uppercase;
+  
+}
+/*skills*/
+
+.skills_con
+{
+    padding:3rem 15rem;
+    padding-bottom: 5rem;
+    margin: 5rem 12rem;
+    margin-top:3rem;
+    background-color: #6290B3;
+}
+
+
+
+
+
+/* Container for skill bars */
+
+.skills_container {
+    width: 100%; /* Full width */
+    background-color: var(--medium-color); /* Grey background */
+    border-radius: 1rem;
+    height: 2rem;
+
+  }
+
+  .skill_title
+  {
+      font-size: 1.5rem;
+      color:var(--light-color);
+      letter-spacing: .1rem;
+      padding:1rem;
+      font-weight: 700;
+      text-align: left;
+  }
+  
+  .skill {
+    text-align: right; /* Right-align text */
+    padding-top:5px;
+    padding-right: 2px;
+    color: var(--light-color); /* White text color */
+  }
+  
+  .html 
+  {
+    width: 90%; 
+    background-color:var(--light-main-color) ;
+    border-radius: 1rem;
+    height: 2rem;
+} 
+
+  .css 
+  {
+    width: 85%; 
+    background-color:var(--light-main-color);
+    border-radius: 1rem;
+    height: 2rem;
+  } 
+
+  .react 
+  {
+    width: 80%; 
+    background-color:var(--light-main-color);
+    border-radius: 1rem;
+    height: 2rem;
+  } 
+  
+  .node 
+  {
+    width: 85%; 
+    background-color:var(--light-main-color) ;
+    border-radius: 1rem;
+    height: 2rem;
+  } 
+
+  .express
+  {
+    width: 75%; 
+    background-color:var(--light-main-color) ;
+    border-radius: 1rem;
+    height: 2rem;
+  } 
+
+  .mongo
+  {
+    width: 85%; 
+    background-color: var(--light-main-color);
+    border-radius: 1rem;
+    height: 2rem;
+  } 
+
+  /*projects page*/
+
+  #projects
+  {
+    text-align: center;
+    padding: 2rem;
+    padding-bottom: 3rem;
+    background-color:var(--dark-color);
+    height: 100vh;
+  }
+
+.projects_show
+{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+  height: 35rem;
+  margin:0rem 6rem;
+  margin-top: 5rem;
+}
+
+.project
+{
+  position:relative;
+  overflow: hidden;
+  display: block;
+  background: var(--dark-main-color);
+  margin:2rem;
+
+}
+
+.project::after
+{
+  content:"";
+  position: absolute;
+  display:block;
+  background: var(--dark-main-color);
+  opacity: 0.9;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+  transition: transform 2s ease,top 1s ease;
+}
+
+/*bring in main color overlay*/
+
+.project:hover::after
+{
+  transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+}
+
+/*scale image on hover*/
+.project:hover .project_img
+{
+  transform: scale(1.2);
+}
+
+/* bring in text on hover*/
+.project:hover .project_txt
+{
+  opacity: 1;
+  transform: translateY(0)
+}
+
+.project_img
+{
+  height: 100%;
+  display: block;
+  transform: translateZ(0);
+  transition: transform 750ms ease,top 750ms ease;
+}
+
+.project_img::before
+{
+  content:"";
+  display: block;
+  padding-top:75%;
+  overflow: hidden;
+}
+
+.project_img img
+{
+  position:absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+}
+
+.project_txt
+{
+  position: absolute;
+  top:0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  opacity:0;
+  text-align: center;
+  z-index: 1;
+  color: var(--light-color);
+  transform: translateY(-20%);
+  transition: opacity 500ms ease,transform 500ms ease;
+  transition-delay: 300ms;
+}
+
+.project_txt_wrap
+{
+  position:absolute;
+  width:100%;
+  top:50%;
+  transform: translateY(-50%);
+
+}
+
+.project_title
+{
+  font-size: 2.5rem;
+  padding:0 1rem;
+  color: var(--light-color);
+
+}
+
+.project_txt_about
+{
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  color: var(--medium-color);
+}
+
+.project a
+{
+   color: var(--light-color);
+   padding-top:2rem;
+   font-weight: 550;
+   font-size: 2rem;
+
+
+}
+
+
+.project a:hover
+{
+   border-bottom:  1px solid var(--medium-color);
+   
+
+}
+
+
+/*contact Page*/
+
+#contact
+{
+  text-align: center;
+  background-color:var(--dark-main-color);
+  padding-bottom: 4rem;
+
+}
+
+.contact_padding
+{
+  padding:5rem 15rem;
+
+}
+
+.text_fields
+{
+  display:grid;
+  grid-template-areas:
+   'name email'
+   'subject phone';
+   grid-gap: 1.2rem;
+   margin-bottom: 1.2rem;
+   margin-top: 4rem;
+}
+
+.message_input
+{
+  width:100%;
+  height: 10rem;
+  font-size:1.5rem;
+}
+
+.name-input
+{
+  grid-area: 'name';
+}
+
+.email-input
+{
+  grid-area: 'email';
+}
+
+.subject-input
+{
+  grid-area: 'subject';
+}
+
+.phone-input
+{
+  grid-area: 'phone';
+}
+
+
+
+
+.text_fields .text_input
+{
+  padding:0.5rem 1rem;
+
+}
+
+
+.send_button
+{
+  display: inline-block;
+	padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  font-size: 2rem;
+  cursor: pointer;
+	border-radius: 0.7rem;
+  width: 20rem;
+	background-color:var(--dark-color);
+	color: var(--light-color); 
+  border:none;
+  margin:2rem;
+  margin-top: 4rem;
+}
+
+.send_button:hover
+{
+  
+	background-color: var(--light-main-color);
+	color: var(--dark-color);
+  
+}
+
+/*contact info*/
+
+.contact_info
+{
+  height: 12.5rem;
+  background-color: var(--dark-color);
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  
+}
+
+.contact_section
+{
+  padding:1.2rem 0;
+
+}
+.contact_title
+{
+  color:var(--light-main-color);
+  font-size: 1.7rem;
+}
+
+.contact_paragraph
+{
+  color: var(--light-main-color);
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+
+.contact_paragraph a:hover
+{
+  border-bottom: 1px solid var(--light-color);
+}
+
+.contact_paragraph a:visited
+{
+  color: var(--light-main-color)
+}
+
+/*footer*/
+
+#main_footer
+{
+  height:4rem;
+  background-color: var(--dark-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_contant
+{
+  color: var(--medium-color);
+  font-size: 1.5rem;
+  padding: 0.7rem 3rem;
+}
+
+.icons_to
+{
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,182 @@
+html {
+  font-size: 62.5%;
+}
+
+
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+
+
+}
+
+
+a
+{
+  text-decoration: none;
+}
+
+
+/*tablets and smaller*/
+
+
+@media (max-width:1050px) 
+{
+  html{
+    font-size: 60%;
+  }
+
+
+  .header
+  {
+    height: 50vh;
+  }
+
+  .container
+  {
+    height: 50vh;
+  }
+
+  .black_background::before
+  {
+    height: 50vh;
+  }
+
+  .about_me
+  {
+   
+    padding: 1rem 5rem;
+  }
+
+
+
+  #projects
+  {
+    height: 60vh;
+  }
+}
+
+/*smartphones*/
+@media (max-width:500px)
+{
+
+  html
+  {
+    font-size: 30%;
+  }
+
+  .cv_nav_header
+  {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header_menu
+  {
+    padding-top: 0;
+  }
+
+  .menu_item .item 
+  {
+    font-size: 2.5rem;
+  }
+
+  .about_me
+  {
+    flex-direction: column;
+   
+  }
+
+  .about_me_img
+  {
+    padding:2rem 0;
+    margin:0;
+  }
+
+  #projects
+  {height: 45vh;}
+
+  .project_txt_about
+  {
+    font-size: 1.5rem;
+  }
+
+
+  .contact_padding
+  {
+    padding: 5rem 2rem;
+  }
+
+
+}
+
+@media (max-width:1000px) 
+{
+
+  .characters 
+  {
+    padding: 3rem 4rem;
+    
+  }
+
+  .skills_con
+  {
+    margin: 5rem 4rem;
+    padding: 3rem 9rem;
+  }
+
+  .contact_padding
+  {
+    padding: 5rem 1rem;
+  }
+
+}
+
+@media (max-width:361px)
+{
+   
+  .text_fields .text_input 
+  {
+    width:36rem;
+  }
+}
+
+@media (max-width:321px)
+{
+
+
+  .text_fields .text_input 
+  {
+    width:31.5rem;
+  }
+
+  #projects
+  {
+    height: 50vh;
+  }
+
+  .projects_show
+  {
+    margin: 0 2rem;
+  }
+
+}
+
+@media (max-width:281px) 
+{
+  .text_fields .text_input 
+  {
+    width:27.5rem;
+  }
+}
+
