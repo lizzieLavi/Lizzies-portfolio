@@ -139,7 +139,7 @@ function App() {
                 <p className="paragraph">
                   and I'm looking for my next job opportunity
                 </p>
-                <a href="/files/lizziesCv.pdf" target="_blank" download>
+                <a href="/files/lizzie_lavi_CV.pdf" target="_blank" download>
                   <button className="resume_download">
                     {" "}
                     Download My Resume{" "}
